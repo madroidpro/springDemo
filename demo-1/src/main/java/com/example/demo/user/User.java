@@ -2,9 +2,15 @@ package com.example.demo.user;
 
 import java.util.Date;
 
+import org.hibernate.validator.constraints.Range;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User {
+
 	private Integer id;
 	private String name;
+	@JsonProperty("birth_date")
 	private Date birthDate;
 	
 	public User(int id, String name, Date birthDate) {
