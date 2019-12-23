@@ -38,7 +38,7 @@ public class UserDaoService {
 		}
 		return null;
 	}
-	
+	 
 	public User deletebyId(int id) {
 		Iterator<User> iterator = users.iterator();
 		while(iterator.hasNext()) {
